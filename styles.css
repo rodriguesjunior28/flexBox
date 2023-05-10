@@ -1,0 +1,64 @@
+body {
+    padding-bottom: 500px;
+}
+
+.container {
+    background-color: #EEE;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    Display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-between;
+    /* justify-content: center;  
+       justify-content: between; */
+    
+    /* alinhamento vertical */
+    align-items: center;
+    flex-wrap: wrap;  /* aqui ele joga pra baixo o que excede em cima */
+}
+
+.item {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+}
+
+    /* alinhamento do filho */
+.box {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    flex-basis: 30px; /* aqui estamos dizendo que queremos que ele tenha 30 pxls de largura */
+}
+
+/* Consegue controlar a forma como o elemento cresce dentro do container */
+#item-1 {
+    flex-grow: 2; 
+}
+
+#item-2,
+#item-3 {
+    flex-grow: 1;
+}
+
+/* é a forma como diminue um elemento */
+#item-3 {
+    flex-shrink: 2;   
+}
+
+/* altera a ordem dos elemtnos */
+#item-2 {
+    order: 1;
+}
+
+#item-3 {
+    order: 2;
+}
+
+#item-1 {
+    order: 3;
+}
+
